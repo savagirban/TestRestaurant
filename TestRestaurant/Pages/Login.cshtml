@@ -1,0 +1,61 @@
+﻿@page
+@model TestRestaurant.Pages.LoginModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <!-- BOOTSTRAP & CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- LOGIN -->
+                <div class="form-container">
+                    <h2>Intră în cont</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">Adresa de email</label>
+                            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Introdu emailul">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Parolă</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Introdu parola">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Conectează-te</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Sign Up Form -->
+                <div class="form-container">
+                    <h2>Creează un cont</h2>
+                    <form id="signupForm" method="post">
+                        <div class="form-group">
+                            <label for="signupName">Username (doar litere, fără spații)</label>
+                            <input type="text" class="form-control" id="signupName" placeholder="Creează-ți un username" name="casutaUsername" >
+                        </div>
+                        <div class="form-group">
+                            <label for="signupEmail">Adresă de email</label>
+                            <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp" placeholder="Introdu un email" name="casutaEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Parolă</label>
+                            <input type="password" class="form-control" id="signupPassword" placeholder="Introdu o parolă" name="casutaParola">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Înregistrează-te</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="log.js"></script>
+</body>
+</html>

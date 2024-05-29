@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="cos.css">
+    <title>Coș de Cumpărături</title>
+</head>
+<body>
+    <main class="l-main">
+        <!--========== CART ==========-->
+        <section class="cart section bd-container">
+            <h2 class="section-title">Coș de Cumpărături</h2>
+        
+            <div class="cart__container bd-grid">
+                <table class="cart__table">
+                    <thead>
+                        <tr>
+                            <th>Produs</th>
+                            <th>Cantitate</th>
+                            <th>Preț</th>
+                            <th>Total</th>
+                            <th>Acțiuni</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- PRODUSE -->
+                    </tbody>
+                </table>
+                <div class="cart__total">
+                    <span>Total general: </span>
+                    <span id="cart-total">0.00 RON</span>
+                </div>
+                <div class="cart__actions">
+                    <button class="button" id="checkout-button">Finalizează Comanda</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

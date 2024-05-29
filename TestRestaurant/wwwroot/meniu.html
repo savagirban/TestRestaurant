@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="meniu.css">
+    <title>Flavor Lab</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const menuButtons = document.querySelectorAll('.menu__button');
+    
+    menuButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const addButton = this.nextElementSibling;
+            if (addButton.classList.contains('menu__add-button')) {
+                if (addButton.style.visibility === 'visible') {
+                    addButton.style.visibility = 'hidden';
+                    addButton.style.opacity = '0';
+                } else {
+                    addButton.style.visibility = 'visible';
+                    addButton.style.opacity = '1';
+                }
+            }
+        });
+    });
+});
+    </script>
+
+    
+    <!--========== SCROLL TOP ==========-->
+    <a href="index.html" class="scrolltop" id="scroll-top">Înapoi în Home</a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#menu1" class="nav__link active-link">Feluri principale</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu2" class="nav__link">Aperitive</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu3" class="nav__link">Răcoritoare</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu4" class="nav__link">Alcool</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== MENU ==========-->
+        <section class="menu section bd-container" id="menu1">
+            <h2 class="section-title">Feluri principale</h2>
+        
+            <div class="menu__container bd-grid">
+
+                <div class="menu__content">
+                    <button class="menu__info-button" data-info="Ciorbă de fasole: Ingrediente - fasole, ceapă, morcovi, țelină, etc.">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aciorbadefasole.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Ciorbă de fasole</h3>
+                    <span class="menu__detail">supe/ciorbe</span>
+                    <span class="menu__preci">22.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                    <a href="#" class="button menu__edit"><i class='bx bx-edit'></i></a>
+                    <a href="#" class="button menu__delete"><i class='bx bx-x'></i></a>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aciorbadevacuta.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Ciorbă de văcuță</h3>
+                    <span class="menu__detail">supe/ciorbe</span>
+                    <span class="menu__preci">22.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aciorbaradauteana.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Ciorbă rădăuțeană</h3>
+                    <span class="menu__detail">supe/ciorbe</span>
+                    <span class="menu__preci">18.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aciorbadeperisoare.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Ciorbă de perișoare</h3>
+                    <span class="menu__detail">supe/ciorbe</span>
+                    <span class="menu__preci">19.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Asuparosii.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Supă de roșii</h3>
+                    <span class="menu__detail">supe/ciorbe</span>
+                    <span class="menu__preci">17.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Asupataietei.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Supă cu tăieței</h3>
+                    <span class="menu__detail">tăieței homemade</span>
+                    <span class="menu__preci">17.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Asupabrocolli.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Supă cremă de brocolli</h3>
+                    <span class="menu__detail">supe/ciorbe</span>
+                    <span class="menu__preci">20.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Asupapui.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Supă de pui</h3>
+                    <span class="menu__detail">supe/ciorbe</span>
+                    <span class="menu__preci">17.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button> <br>
+                    <img src="assets/img/Apulledporlburger.png" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Burger porc</h3>
+                    <span class="menu__detail">fast-food</span>
+                    <span class="menu__preci">38.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button> <br>
+                    <img src="assets/img/Avitaburger.png" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Burger vită</h3>
+                    <span class="menu__detail">fast-food</span>
+                    <span class="menu__preci">48.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aburgerpui.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Burger pui</h3>
+                    <span class="menu__detail">fast-food</span>
+                    <span class="menu__preci">32.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content"> 
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aburgervegan.png" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Burger vegan</h3>
+                    <span class="menu__detail">fast-food</span>
+                    <span class="menu__preci">27.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button> <br> 
+                    <img src="assets/img/Aaripioare.png" alt="" class="menu__img"> <br> <br>
+                    <h3 class="menu__name">Meniu aripioare</h3>
+                    <span class="menu__detail">fast-food</span>
+                    <span class="menu__preci">35.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content"> 
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Avita.png" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Antricot de vită</h3>
+                    <span class="menu__detail">steak</span>
+                    <span class="menu__preci">140.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content"> 
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aporc.png" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Ceafă de porc</h3>
+                    <span class="menu__detail">steak</span>
+                    <span class="menu__preci">52.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content"> 
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Acotlet.png" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Cotlet de porc</h3>
+                    <span class="menu__detail">steak</span>
+                    <span class="menu__preci">44.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content"> 
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Amuschiulet.png" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Mușchiuleț de porc</h3>
+                    <span class="menu__detail">steak</span>
+                    <span class="menu__preci">60.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button> <br> <br>
+                    <img src="assets/img/Asalatacaesar.png" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Salată Caesar</h3>
+                    <span class="menu__detail">salate</span>
+                    <span class="menu__preci">17.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Asalatavegana.png" alt="" class="menu__img"> 
+                    <h3 class="menu__name">Salata Casei</h3>
+                    <span class="menu__detail">salate</span>
+                    <span class="menu__preci">13.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content"> 
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Asalatavegetariana.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Salată Grecească</h3>
+                    <span class="menu__detail">salate</span>
+                    <span class="menu__preci">16.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content"> 
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Asalataverde.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Salată verde</h3>
+                    <span class="menu__detail">salate</span>
+                    <span class="menu__preci">14.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Acartofinatur.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Cartofi natur</h3>
+                    <span class="menu__detail">garnitură</span>
+                    <span class="menu__preci">6.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Acartofiprajiti.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Cartofi prăjiți</h3>
+                    <span class="menu__detail">garnitură</span>
+                    <span class="menu__preci">6.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Acartofiincoaja.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Cartofi la cuptor</h3>
+                    <span class="menu__detail">garnitură</span>
+                    <span class="menu__preci">9.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Acartofipiure.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Cartofi piure</h3>
+                    <span class="menu__detail">garnitură</span>
+                    <span class="menu__preci">6.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Alegumegratar.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Legume la grătar</h3>
+                    <span class="menu__detail">garnitură</span>
+                    <span class="menu__preci">9.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aorez.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Orez</h3>
+                    <span class="menu__detail">garnitură</span>
+                    <span class="menu__preci">7.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section bd-container" id="menu2">
+            <h2 class="section-title">Aperitive</h2>
+            <div class="menu__container bd-grid">
+
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Abrusheyemixte.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Bruschete mixte</h3>
+                    <span class="menu__detail">aperitiv rece</span>
+                    <span class="menu__preci">32.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aantipasto.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Platou antipasto</h3>
+                    <span class="menu__detail">aperitiv rece</span>
+                    <span class="menu__preci">50.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Abresaola.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Bresaola</h3>
+                    <span class="menu__detail">aperitiv rece</span>
+                    <span class="menu__preci">45.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Abranzaafeta.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Brânză feta cu afine</h3>
+                    <span class="menu__detail">aperitiv cald</span>
+                    <span class="menu__preci">43.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Acamembert.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Camembert cu afine</h3>
+                    <span class="menu__detail">aperitiv cald</span>
+                    <span class="menu__preci">55.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+        </section>
+
+        <section class="menu section bd-container" id="menu3">
+            <h2 class="section-title">Răcoritoare</h2>
+            <div class="menu__container bd-grid">
+
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aapaplata.PNG" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Bucovina plată 0.5L</h3>
+                    <span class="menu__detail">apă necarbogazificată</span>
+                    <span class="menu__preci">7.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aapaminerala.PNG" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Bucovina Carbo 0.5L</h3>
+                    <span class="menu__detail">apă carbogazificată</span>
+                    <span class="menu__preci">7.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Afresh.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Fresh de portocale 0.4L</h3>
+                    <span class="menu__detail">suc proaspăt stors</span>
+                    <span class="menu__preci">15.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Alimonada.png" alt="" class="menu__img"> <br>
+                    <h3 class="menu__name">Limonadă 0.6L</h3>
+                    <span class="menu__detail">cu lămâie și lime</span>
+                    <span class="menu__preci">12.00 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aliptonpeach.PNG" alt="" class="menu__img"> 
+                    <h3 class="menu__name">Lipton 0.5L</h3>
+                    <span class="menu__detail">ceai piersici</span>
+                    <span class="menu__preci">10.50 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aliptongreen.PNG" alt="" class="menu__img">
+                    <h3 class="menu__name">Lipton 0.5L</h3>
+                    <span class="menu__detail">ceai verde</span>
+                    <span class="menu__preci">10.50 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Alipton.PNG" alt="" class="menu__img"> 
+                    <h3 class="menu__name">Lipton 0.5L</h3>
+                    <span class="menu__detail">ceai zmeură</span>
+                    <span class="menu__preci">10.50 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aliptonlemon.PNG" alt="" class="menu__img">
+                    <h3 class="menu__name">Lipton 0.5L</h3>
+                    <span class="menu__detail">ceai lămâie</span>
+                    <span class="menu__preci">10.50 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aprigat.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Prigat 0.5L</h3>
+                    <span class="menu__detail">portocale</span>
+                    <span class="menu__preci">11.50 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/A7up.png" alt="" class="menu__img">
+                    <h3 class="menu__name">7up 0.5L</h3>
+                    <span class="menu__detail">suc carbogazificat</span>
+                    <span class="menu__preci">10.50 RON</span>
+                    <a  class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Apepsi.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Pepsi 0.33L</h3>
+                    <span class="menu__detail">suc carbogazificat</span>
+                    <span class="menu__preci">9.50 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Amirinda.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Mirinda 0.33L</h3>
+                    <span class="menu__detail">suc carbogazificat</span>
+                    <span class="menu__preci">9.50 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section bd-container" id="menu4">
+            <h2 class="section-title">Alcool</h2>
+            <div class="menu__container bd-grid">
+
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Agrigorescualb.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Jidvei Grigorescu 0.7L</h3>
+                    <span class="menu__detail">vin alb demisec</span>
+                    <span class="menu__preci">90.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Ascinttirose.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Jidvei Grigorescu 0.7L</h3>
+                    <span class="menu__detail">vin rose demisec</span>
+                    <span class="menu__preci">90.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Agrigorescurosu.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Jidvei Grigorescu 0.7L</h3>
+                    <span class="menu__detail">vin roșu demisec</span>
+                    <span class="menu__preci">90.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+            <div class="menu__content">
+                <button class="menu__info-button">
+                    <i class='bx bx-info-circle'></i>
+                </button>
+                <img src="assets/img/Atraditionalalb.png" alt="" class="menu__img">
+                <h3 class="menu__name">Jidvei Tradițional 0.7L</h3>
+                <span class="menu__detail">vin alb demisec</span>
+                <span class="menu__preci">80.00 RON</span>
+                <a class="button menu__button">
+                    <i class='bx bx-cart-alt'></i>
+                </a>
+                <button class="menu__add-button">
+                    <i class='bx bx-plus'></i>
+                </button>
+            </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Atezauralb.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Jidvei Tezaur 0.7L</h3>
+                    <span class="menu__detail">vin alb sec</span>
+                    <span class="menu__preci">120.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Agabairosu.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Gabai 0.7L</h3>
+                    <span class="menu__detail">vin roșu sec</span>
+                    <span class="menu__preci">150.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aheineken.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Heineken 0.33L</h3>
+                    <span class="menu__detail">bere blondă</span>
+                    <span class="menu__preci">12.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Acorona.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Corona 0.35L</h3>
+                    <span class="menu__detail">bere blondă</span>
+                    <span class="menu__preci">13.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aciuc.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Ciuc 0.33L</h3>
+                    <span class="menu__detail">bere blondă</span>
+                    <span class="menu__preci">8.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aciucradler.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Ciuc Radler 0.33L</h3>
+                    <span class="menu__detail">bere blondă cu lămâie</span>
+                    <span class="menu__preci">8.50 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Astrongbow.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Strongbow 0.33L</h3>
+                    <span class="menu__detail">cidru pere</span>
+                    <span class="menu__preci">10.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+                <div class="menu__content">
+                    <button class="menu__info-button">
+                        <i class='bx bx-info-circle'></i>
+                    </button>
+                    <img src="assets/img/Aamstel.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Bere Amstel 0.33L</h3>
+                    <span class="menu__detail">bere blondă</span>
+                    <span class="menu__preci">15.00 RON</span>
+                    <a class="button menu__button">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                    <button class="menu__add-button">
+                        <i class='bx bx-plus'></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+    
+
+</body>
+</html>

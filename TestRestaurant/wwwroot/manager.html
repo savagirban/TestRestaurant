@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="manager.css">
+    <title>Admin - Flavor Lab</title>
+</head>
+
+<body>
+
+    <main class="main">
+
+        <section class="section bd-container" id="add-item">
+            <h2 class="section-title">Adaugă Articol Nou</h2>
+            <form id="add-item-form">
+                <div class="form-group">
+                    <label for="item-category">Categorie:</label>
+                    <select id="item-category" name="item-category">
+                        <option value="feluri-principale">Feluri principale</option>
+                        <option value="aperitive">Aperitive</option>
+                        <option value="racoritoare">Răcoritoare</option>
+                        <option value="alcool">Alcool</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="item-name">Nume:</label>
+                    <input type="text" id="item-name" name="item-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="item-price">Preț (RON):</label>
+                    <input type="number" id="item-price" name="item-price" required>
+                </div>
+                <div class="form-group">
+                    <label for="item-detail">Detalii:</label>
+                    <input type="text" id="item-detail" name="item-detail" required>
+                </div>
+
+                <button type="submit" class="button">Adaugă Articol</button>
+            </form>
+        </section>
+
+
+        <section class="section bd-container" id="edit-item">
+            <h2 class="section-title">Editează Articol</h2>
+            <form id="edit-item-form">
+                <div class="form-group">
+                    <label for="edit-item-id">ID Articol:</label>
+                    <input type="text" id="edit-item-id" name="edit-item-id" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-item-name">Nume:</label>
+                    <input type="text" id="edit-item-name" name="edit-item-name">
+                </div>
+                <div class="form-group">
+                    <label for="edit-item-price">Preț (RON):</label>
+                    <input type="number" id="edit-item-price" name="edit-item-price">
+                </div>
+                <div class="form-group">
+                    <label for="edit-item-detail">Detalii:</label>
+                    <input type="text" id="edit-item-detail" name="edit-item-detail">
+                </div>
+                
+                <button type="submit" class="button">Salvează Modificările</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

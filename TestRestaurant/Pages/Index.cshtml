@@ -1,0 +1,127 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Flavor Lab</title>
+</head>
+<body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <img src="assets/img/logo.png" class="nav__logo" width="80px" height="80px">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Principal</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Cont</a>
+                    </li>
+                    <li>
+                        <i class='bx bx-moon change-theme' id="theme-button"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Flavor Lab</h1>
+                    <h2 class="home__subtitle">Bine ați venit în <br> restaurantul nostru.</h2>
+                    <a href="meniu.html" class="button">Vezi meniul</a>
+                </div>
+                <img src="assets/img/home.png" alt="" class="home__img">
+            </div>
+        </section>
+
+        <!--========== ABOUT ==========-->
+        <section class="about section bd-container" id="about">
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">Devino utilizator</span>
+                    <h2 class="section-title about__initial">Verifică-ne talentul</h2>
+                    <p class="about__description">Una dintre cele mai bune bucătării din Timișoara, mai ales datorită bucătarilor, dar și a tehnologiilor moderne utilizate.</p>
+                    <a asp-page="/Login" class="button">Autentifică-te / Înregistrează-te</a>
+                </div>
+                <img src="assets/img/about.jpg" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--========== CONTACT US ==========-->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial">Ai comandat</span>
+                    <h2 class="section-title contact__initial">Verifică-ți comanda</h2>
+                    <p class="contact__description">Intră aici să vezi cât timp mai durează prepararea</p>
+                </div>
+                <div class="contact__button">
+                    <a href="cos.html" class="button">Verifică</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Descoperă-ne</h3>
+                <ul>
+                    <li><p class="footer__link">Vino la o cină romantică</p></li>
+                    <li><p class="footer__link">Distrează-te cu prietenii</p></li>
+                    <li><p class="footer__link">Sună pentru rezervare</p></li>
+                    <li><p class="footer__link">Sună pentru evenimente</p></li>
+                    <li><p class="footer__link">Simte-te ca acasă</p></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Noi</h3>
+                <ul>
+                    <li><p class="footer__link">Denisa Cizmaș</p></li>
+                    <li><p class="footer__link">Larisa Cioancă</p></li>
+                    <li><p class="footer__link">Damaris Berbecea</p></li>
+                    <li><p class="footer__link">Mihnea Ciopeică</p></li>
+                    <li><p class="footer__link">Sava Gîrban</p></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Adresă</h3>
+                <ul>
+                    <li>Timișoara - România</li>
+                    <li>Calea Marcus Aurelius nr. 18</li>
+                    <li>+40 754 637 823</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

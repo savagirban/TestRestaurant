@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrație Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .input-time {
+            width: 50px;
+            padding: 5px;
+            margin-left: 10px;
+        }
+    </style>
+    <script>
+        function updateTotal() {
+            let rows = document.querySelectorAll('tbody tr');
+            let total = 0;
+            rows.forEach(row => {
+                let price = parseFloat(row.querySelector('.price').innerText.replace(' RON', ''));
+                let quantity = parseInt(row.querySelector('.quantity').innerText);
+                total += price * quantity;
+            });
+            document.querySelector('.total-amount').innerText = total + ' RON';
+        }
+
+        document.addEventListener('DOMContentLoaded', updateTotal);
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Administrație Restaurant</h1>
+</header>
+
+<div class="container">
+    <!-- Secțiunea pentru comenzi -->
+    <div class="section">
+        <h2>Comenzi Nefinalizate</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Comandă</th>
+                    <th>Client</th>
+                    <th>Produse</th>
+                    <th>Status</th>
+                    <th>Timp Estimat (minute)</th>
+                    <th>Actualizează</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ion Popescu</td>
+                    <td>Pizza, Salată</td>
+                    <td>
+                        <select>
+                            <option value="în așteptare">În așteptare</option>
+                            <option value="preparare">Preparare</option>
+                            <option value="servită">Servită</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" class="input-time" placeholder="30">
+                    </td>
+                    <td>
+                        <button class="btn">Actualizează</button>
+                    </td>
+                </tr>
+                <!-- Alte comenzi pot fi adăugate aici -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
